@@ -1,15 +1,9 @@
 import * as S from './styles'
 
-import { Game } from '../../App'
-
 import cesta from '../../assets/cesta.png'
 import { paraReal } from '../Produto'
 
-type Props = {
-  itensNoCarrinho: Game[]
-}
-
-const Header = ({ itensNoCarrinho }: Props) => {
+const Header = () => {
   const valorTotal = itensNoCarrinho.reduce((acc, item) => {
     acc += item.preco
     return acc
