@@ -3,7 +3,6 @@ import * as S from './styles'
 
 type Props = {
   game: Game
-  aoComprar: (jogo: Game) => void
 }
 
 export const paraReal = (valor: number) =>
